@@ -1,4 +1,4 @@
-#coding utf-8
+#*-* coding: utf-8 *-*
 import os
 PROJECT_DIR = os.path.dirname(__file__)
 
