@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %} Sucesso! {% endblock %}
+
+{% block content %}
+<p><span class="azul">{{ subs.name }}</span>, seu cadastro foi realizado com sucesso!</p>
+<p>
+	Aguarde... logo logo entraremos em contato pelo 
+	{% if subs.phone %}
+	telefone: <span class="azul">{{ subs.phone }}</span>
+	{% else %}
+	e-mail: <span class="azul">{{ subs.email }}</span>
+	{% endif %}
+</p>
+{% endblock %}

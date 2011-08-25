@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %} Inscrição! {% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="{{ STATIC_URL }}ui/js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}ui/js/mask.js"></script>	
+<script type="text/javascript">
+	jQuery(function($) {
+		$("#id_phone").mask("(99) 9999-9999");
+		$("#id_cpf").mask("999.999.999-99");		
+	});
+</script>
+{% endblock %}
+
+{% block content %}
+<p>Inscreva-se agora mesmo no evento mais sensacional do momento!</p>
+<form action="{% url subscription:subs_new %}" method="post">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<input type="submit" name="submit" value="Inscrever" />
+</form>
+{% endblock %}
