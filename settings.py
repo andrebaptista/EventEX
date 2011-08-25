@@ -3,7 +3,7 @@ import os
 PROJECT_DIR = os.path.dirname(__file__)
 
 DEBUG = True
-TEMPLATE_DEBUG = Debug
+TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     (u'Andre Baptista', 'andre@vigillare.com.br'),
