@@ -3,7 +3,7 @@ import os
 PROJECT_DIR = os.path.dirname(__file__)
 
 DEBUG = True
-TEMPLATE_DEBUG = DEBUG
+TEMPLATE_DEBUG = Debug
 
 ADMINS = (
     (u'Andre Baptista', 'andre@vigillare.com.br'),
@@ -124,6 +124,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'core',
+    'subscription',
 )
 
 # A sample logging configuration. The only tangible logging

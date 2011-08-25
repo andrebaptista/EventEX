@@ -1,27 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+{% extends "base.html" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+{% block title %} Hot Site {% endblock %}
 
-	<title>EventEX</title>
-	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}ui/css/estilos.css" />
-	<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-</head>
-
-<body>
-	<div id="header">
-		<h1 class="azul">EventEX</h1>
-	</div>
-	<div id="content">
-		<p>O evento mais sensacional depois do Dev in Rio</p>
-		<p>Você não pode perder esta oportunidade!</p>
-		<p>Abertura das inscrições em <span class="azul">21/08/2011</span></p>
-		<p>Para dúvidas e mais informações entre em contato com <a href="mailto:eventex@eventex.com.br">eventex@eventex.com.br</a></p>
-	</div>
-	<div id="footer">
-		<p></p>
-	</div>
-</body>
-</html>
+{% block content %}
+<p>O evento mais sensacional depois do Dev in Rio</p>
+<p>Você não pode perder esta oportunidade!</p>
+<p><a href="{% url subscription:subs_new %}">Inscriões abertas CLIQUE AQUI.</a></p>
+<p>Para dúvidas e mais informações entre em contato com <a href="mailto:eventex@eventex.com.br">eventex@eventex.com.br</a></p>
+{% endblock %}

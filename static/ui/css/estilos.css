@@ -1,5 +1,12 @@
 body { font-family: 'Architects Daughter', cursive; color: #ccc; background: #181818 url("../img/bg.jpg") left fixed no-repeat; }
 #header, #content, #footer { margin-left: 350px;}
+.clear { clear: both;}
 .azul { color:#03bcfd; }
 a { text-decoration: none; color:#03bcfd; }
 a:hover { text-decoration: underline; }
+.active { color: #ccc; text-decoration: underline; }
+form label { float: left; width: 100px; }
+form p { margin: 3px 0; }
+.errorlist li { list-style: none; color: #CE1400;}
+.nav ul { padding: 5px; }
+.nav ul li { float: left; list-style: none; margin-right: 10px;}
