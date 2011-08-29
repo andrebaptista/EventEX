@@ -7,6 +7,6 @@ class SubscriptionAdmin(admin.ModelAdmin):
     list_display = ["name", "phone", "email", "cpf", "created_at"]
     list_filter = ["created_at"]
     
-    search_fields = ["name"]
+    search_fields = ["name", "cpf"]
     
 admin.site.register(Subscription, SubscriptionAdmin)

@@ -3,10 +3,11 @@ import os
 PROJECT_DIR = os.path.dirname(__file__)
 
 DEBUG = True
-TEMPLATE_DEBUG = DEBUG
+#TEMPLATE_DEBUG = DEBUG
+TEMPLATE_DEBUG = True
 
 ADMINS = (
-    (u'Andre Baptista', 'andre@vigillare.com.br'),
+    (u'André Baptista', 'andre@vigillare.com.br'),
 )
 
 MANAGERS = ADMINS
@@ -103,7 +104,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'urls'
+ROOT_URLCONF = 'eventex.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -125,6 +126,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'core',
     'subscription',
+    'testes',
 )
 
 # A sample logging configuration. The only tangible logging
