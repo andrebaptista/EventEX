@@ -31,6 +31,3 @@ class EstatisticasTest(TestCase):
     
     def test_maior_numero_quebra2(self):
         self.assertEquals(estatisticas.maior_numero([]),0)
-        
-class TesteBug(Teste):
-    pass
